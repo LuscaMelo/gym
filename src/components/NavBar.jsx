@@ -39,7 +39,8 @@ export const NavBar = () => {
                     </Link>
                     <Flex alignItems="center" display={["none", "none", "block"]}>
                         {navItems.map((item, index) => (
-                            <Link as="b" key={index}
+                            <Link
+                                key={index}
                                 color="white"
                                 pl={8}
                                 letterSpacing="1px"
@@ -83,7 +84,8 @@ export const NavBar = () => {
                 alignItems="center"
                 color="white">
                 {navItems.map((item, index) => (
-                    <Link as="b" key={index}
+                    <Link
+                        key={index}
                         color="white"
                         py={6}
                         px={20}

@@ -16,7 +16,7 @@ export const Card = ({ img, position, level, title }) => {
                     backgroundImage={img}
                     backgroundPosition={position}
                     backgroundSize="cover"
-                    mr={8}
+                    mr={[0, 8, 8]}
                     borderRadius="50%"
                 />
                 <Box
