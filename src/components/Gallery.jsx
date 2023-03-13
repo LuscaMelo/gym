@@ -10,7 +10,7 @@ const imgs = [{ img: img1, id: 1 }, { img: img2, id: 2 }, { img: img3, id: 3 }, 
 
 export const Gallery = () => {
     return (
-        <Flex py={5}>
+        <Flex>
             <Container maxW='4xl' display="flex" flexDir="COLUMN" justifyContent="center" pb={8}>
                 <SectionTitle title="GALLERY" subtitle="see some pictures of our environments" />
                 <SimpleGrid columns={[1, 2, 2]} spacing={5}>
