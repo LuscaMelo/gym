@@ -4,6 +4,7 @@ import { BodyTransformation } from "./components/BodyTransformation"
 import { Plans } from "./components/Plans"
 import { Testimonials } from "./components/Testimonials"
 import { Subscribe } from "./components/Subscribe"
+import { Footer } from "./components/Footer"
 
 export const App = () => {
 
@@ -15,6 +16,7 @@ export const App = () => {
       <Testimonials />
       <Plans />
       <Subscribe />
+      <Footer />
     </div>
   )
 }

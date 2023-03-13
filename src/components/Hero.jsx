@@ -41,7 +41,7 @@ export const Hero = () => {
                             color: "green.700"
                         }}
                     >
-                        About Us
+                        Our Units
                     </Button>
                 </Container>
             </Box>
