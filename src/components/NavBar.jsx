@@ -35,11 +35,22 @@ export const NavBar = () => {
 
     return (
         <>
-            <Flex as="nav" w="100%" h="95px" alignItems="center" bg={["#020202", "#020202", scroll ? "transparent" : "#020202"]} position="fixed" top="0" zIndex="1" transition=".4s all">
+            <Flex
+                as="nav"
+                w="100%"
+                h="95px"
+                alignItems="center"
+                bg={["#020202", "#020202", scroll ? "transparent" : "#020202"]}
+                position="fixed"
+                top="0"
+                zIndex="1"
+                transition=".4s all"
+            >
                 <Container maxW="container.xl" display="flex" alignItems="center" justifyContent="space-between">
-                    <Link as={Link} href="/" _hover={{
+                    <Link _hover={{
                         textDecoration: "none"
-                    }}>
+                    }}
+                    >
                         <Heading color="green.400" fontSize={29}>GYM.</Heading>
                     </Link>
                     <Flex alignItems="center" display={["none", "none", "block"]}>

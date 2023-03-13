@@ -27,7 +27,7 @@ export const Card = ({ img, position, level, title }) => {
                     <Heading as="h4" size="md">{level}</Heading>
                     <Heading as="h3" size="xl" color="green.500">{title}</Heading>
                     <Text color="gray" py={2} maxWidth="400px" fontSize={15}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem alias repellat corrupti sed rem sit officiis dicta, esse eius, atque dolorum praesentium.</Text>
-                    <Button variant="ghost" colorScheme="gray">View Workouts <BsArrowRightShort style={{ marginLeft: "5px", fontSize: "20px" }} /></Button>
+                    <Button variant="ghost" colorScheme="gray">View Workouts <BsArrowRightShort fontSize={22} ml={2} /></Button>
                 </Box>
             </Flex>
         </Box>
