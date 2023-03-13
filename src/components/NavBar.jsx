@@ -5,7 +5,7 @@ import bg from "../assets/mobile.png"
 
 export const NavBar = () => {
 
-    const navItems = ["HOME", "PROGRAMS", "PLANS", "TESTMONIALS", "ABOUT US"]
+    const navItems = ["HOME", "WORKOUTS", "TESTIMONIALS", "PLANS", "NEWS"]
 
     const [mobile, setMobile] = useState(false)
     const [menu, setMenu] = useState("none")
@@ -28,11 +28,16 @@ export const NavBar = () => {
         }
     }
 
+    function closeMenu() {
+        setMenu("none")
+        setMobile(!mobile)
+    }
+
     return (
         <>
-            <Flex as="nav" w="100%" h="95px" alignItems="center" bg={["#020202", "#020202", scroll ? "transparent" : "#020202"]} position="fixed" top="0" zIndex="1">
+            <Flex as="nav" w="100%" h="95px" alignItems="center" bg={["#020202", "#020202", scroll ? "transparent" : "#020202"]} position="fixed" top="0" zIndex="1" transition=".4s all">
                 <Container maxW="container.xl" display="flex" alignItems="center" justifyContent="space-between">
-                    <Link href="/" _hover={{
+                    <Link as={Link} href="/" _hover={{
                         textDecoration: "none"
                     }}>
                         <Heading color="green.400" fontSize={29}>GYM.</Heading>
@@ -46,6 +51,7 @@ export const NavBar = () => {
                                 letterSpacing="1px"
                                 fontSize={14}
                                 transition="0.5s"
+                                fontWeight="semibold"
                                 _hover={{
                                     textDecoration: "none",
                                     color: "green.400"
@@ -84,7 +90,7 @@ export const NavBar = () => {
                 alignItems="center"
                 color="white">
                 {navItems.map((item, index) => (
-                    <Link
+                    <Link as={Link}
                         key={index}
                         color="white"
                         py={6}
@@ -96,6 +102,7 @@ export const NavBar = () => {
                             textDecoration: "none",
                             color: "green.400"
                         }}
+                        onClick={closeMenu}
                     >{item}</Link>
                 ))}
                 <Button

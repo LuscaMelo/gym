@@ -31,7 +31,7 @@ export const MyCard = ({ cardText, name }) => {
 
 export const Testimonials = () => {
     return (
-        <Box bg="gray.100" pb={10}>
+        <Box bg="gray.100" pb={1}>
             <Container maxW="container.xl">
                 <SectionTitle title="TESTIMONIALS" subtitle="What our clients say about our gym" />
                 <Grid templateColumns={['1fr', '1fr', 'repeat(2, 1fr)']} gap="40px" mb={20}>

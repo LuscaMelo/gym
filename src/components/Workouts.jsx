@@ -34,9 +34,9 @@ export const Card = ({ img, position, level, title }) => {
     )
 }
 
-export const Programs = () => {
+export const Workouts = () => {
     return (
-        <Box py={[0, 0, 20]}>
+        <Box pb={20}>
             <Container maxW="container.xl">
                 <SectionTitle title="WORKOUTS" subtitle="Our exclusive training session just for you. Create your style" />
                 <Grid templateColumns={["1fr", "1fr", "repeat(2, 1fr)"]} gap={1}>

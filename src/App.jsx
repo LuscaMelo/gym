@@ -1,18 +1,20 @@
 import { Hero } from "./components/Hero"
-import { Programs } from "./components/Programs"
+import { Workouts } from "./components/Workouts"
 import { BodyTransformation } from "./components/BodyTransformation"
 import { Plans } from "./components/Plans"
 import { Testimonials } from "./components/Testimonials"
+import { Subscribe } from "./components/Subscribe"
 
 export const App = () => {
 
   return (
     <div className="App">
       <Hero />
-      <Programs />
+      <Workouts />
       <BodyTransformation />
       <Testimonials />
       <Plans />
+      <Subscribe />
     </div>
   )
 }
