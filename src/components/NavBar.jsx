@@ -36,6 +36,7 @@ export const NavBar = () => {
     return (
         <>
             <Flex
+                px={5}
                 as="nav"
                 w="100%"
                 h="95px"
@@ -71,14 +72,14 @@ export const NavBar = () => {
                         ))}
                     </Flex>
 
-                    <Flex display={["block", "block", "none"]}>
+                    <Flex display={["block", "block", "none"]} mr={"-10px"}>
                         <Button colorScheme="green" bg="transparent"
                             _hover={{
                                 backgroundColor: "none"
                             }}
                             onClick={handleMobile}
                         >
-                            {mobile ? <CloseIcon color="white" w={5} h={5} /> : <HamburgerIcon color="white" w={8} h={8} />}
+                            {mobile ? <CloseIcon color="white" w={5} h={5} /> : <HamburgerIcon color="white" w={7} h={7} />}
                         </Button>
                     </Flex>
                 </Container>
@@ -86,6 +87,7 @@ export const NavBar = () => {
 
             <Flex
                 display={menu}
+                backgroundColor="#020202"
                 backgroundImage={bg}
                 backgroundRepeat="no-repeat"
                 backgroundSize="cover"
@@ -95,7 +97,7 @@ export const NavBar = () => {
                 zIndex="1"
                 top="90px"
                 flexDirection="column"
-                pt={20}
+                pt={10}
                 h="100vh"
                 w="100%"
                 alignItems="center"
@@ -121,7 +123,7 @@ export const NavBar = () => {
                     size="md"
                     ml={6}
                     mr={4}
-                    mt={5}
+                    mt={8}
                     fontWeight="bold"
                     _hover={{
                         color: "white"

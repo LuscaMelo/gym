@@ -14,17 +14,18 @@ export const Hero = () => {
         >
             <NavBar />
             <Box
-                h="90%"
+                h="80%"
                 display="flex"
                 alignItems="center"
                 justifyContent="center"
+                px={5}
             >
                 <Container maxW="container.xl">
                     <Heading as="h2" mt={["150px", "250px", "300"]} fontSize={["5xl", "6xl", "7xl"]} color="white" letterSpacing="-2px">Are you ready to <span style={{ textDecoration: "underline", textDecorationColor: "#48bb78" }}>change?</span></Heading>
                     <Text color="gray.50" fontSize={["sm", "md", "lg"]} maxWidth={["700px", "500px", "700px"]} py={5}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum fugiat magni asperiores, natus vel mollitia reprehenderit atque consequuntur aliquid facilis impedit reiciendis, tenetur velit, eos in. Inventore animi veniam incidunt.</Text>
                     <Button size="lg" colorScheme="green"
                         fontWeight="bold"
-                        mt={3}
+                        mt={10}
                         mr={3}
                         _hover={{
                             backgroundColor: "green.400",
@@ -35,7 +36,7 @@ export const Hero = () => {
                     </Button>
                     <Button size="lg" colorScheme="green" variant="outline"
                         fontWeight="bold"
-                        mt={3}
+                        mt={10}
                         _hover={{
                             backgroundColor: "green.400",
                             color: "green.700"

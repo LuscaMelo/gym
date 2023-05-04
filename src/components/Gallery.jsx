@@ -10,7 +10,7 @@ const imgs = [{ img: img1, id: 1 }, { img: img2, id: 2 }, { img: img3, id: 3 }, 
 
 export const Gallery = () => {
     return (
-        <Flex>
+        <Flex px={5}>
             <Container maxW='4xl' display="flex" flexDir="COLUMN" justifyContent="center" pb={8}>
                 <SectionTitle title="GALLERY" subtitle="see some pictures of our environments" />
                 <SimpleGrid columns={[1, 2, 2]} spacing={5}>
@@ -18,7 +18,7 @@ export const Gallery = () => {
                         <Image src={img.img} key={img.id} ></Image>
                     ))}
                 </SimpleGrid>
-                <Button variant="ghost" colorScheme="gray" ml="auto" mt={3}>View more <BsArrowRightShort fontSize={22} ml={2} /></Button>
+                <Button variant="ghost" colorScheme="gray" ml="auto" my={3}>View more <BsArrowRightShort fontSize={22} ml={2} /></Button>
             </Container>
         </Flex>
     )

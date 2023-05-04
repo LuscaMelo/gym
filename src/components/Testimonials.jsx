@@ -8,6 +8,7 @@ export const MyCard = ({ cardText, name }) => {
             padding={3}
             mb={0}
             pb={0}
+            mx={5}
             _hover={[{
 
             }, {
@@ -22,7 +23,7 @@ export const MyCard = ({ cardText, name }) => {
                 <ImQuotesLeft fontSize={40} color="#38a169" />
             </CardHeader>
             <CardBody>
-                <Text fontSize="sm">{cardText}</Text>
+                <Text fontSize={["xs", "sm"]}>{cardText}</Text>
                 <Text color="green.400" fontWeight="bold" mt={8}>{name}</Text>
             </CardBody>
         </Card >

@@ -9,8 +9,8 @@ export const Footer = () => {
                 <Container maxW="3xl">
                     <Flex flexDir="column" justifyContent="center" alignItems="center" textAlign="center" gap={8}>
                         <Heading color="green.400" fontSize={29}>GYM.</Heading>
-                        <Text fontSize="sm" color="gray">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat aliquam culpa ad eveniet possimus dignissimos aut reiciendis.
+                        <Text fontSize="sm" color="gray" px={5}>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat aliquam culpa ad eveniet.
                         </Text>
                         <Flex gap={3} fontSize="20px">
                             <BsTwitter cursor="pointer" />
@@ -23,7 +23,7 @@ export const Footer = () => {
                 </Container>
             </Flex >
             <Flex backgroundColor="#020202" py={5} justifyContent="center">
-                <Text color="gray" textAlign="center" fontSize="sm">Copyright ©2023 GYM. Design by <Link href="https://www.linkedin.com/in/lucasmelodesenvolvedor/" target="_blank" color="green.600" fontWeight="bold" letterSpacing="0.5px">Lucas Melo</Link></Text>
+                <Text color="gray" textAlign="center" fontSize="xs">Copyright ©2023 GYM. Design by <Link href="https://www.linkedin.com/in/lucasmelodesenvolvedor/" target="_blank" color="green.600" fontWeight="bold" fontSize="sm" letterSpacing="0.5px">Lucas Melo</Link></Text>
             </Flex>
         </>
     )

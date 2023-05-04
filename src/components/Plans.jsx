@@ -6,11 +6,12 @@ export const Card = ({ planType, price }) => {
     return (
         <Box
             background="blue"
-            padding="3em" color="white"
+            padding="2em" color="white"
             backgroundColor="#0e0e0e"
             borderRadius="8px"
             fontSize={14}
             margin="0 auto"
+            mx={[5, "3rem", "1rem"]}
             _hover={[{
                 transition: "0.6s ease",
                 backgroundColor: "#204720",
@@ -34,7 +35,7 @@ export const Card = ({ planType, price }) => {
                     <Text size="md" fontWeight="200">/month</Text>
                 </Flex>
             </Box>
-            <Box>
+            <Box fontSize={["xs", "sm", "md"]}>
                 <Flex alignItems="center"><AiFillCheckCircle color="green" /><Text p={2}>Access to all gym equipment</Text></Flex>
                 <Flex alignItems="center"><AiFillCheckCircle color="green" /><Text p={2}>Unlimited training time</Text></Flex>
                 <Flex alignItems="center"><AiFillCheckCircle color="green" /><Text p={2}>1 free entry for a friend every month</Text></Flex>
@@ -59,7 +60,7 @@ export const Card = ({ planType, price }) => {
 
 export const Plans = () => {
     return (
-        <Container maxW="container.xl">
+        <Container maxW="container.xl" pb={"2rem"}>
             <SectionTitle title="PLANS" subtitle="First entrance for free" />
             <Grid templateColumns={["1fr", "1fr", "repeat(3, 1fr)"]} gap="40px" mb={20}>
                 <Card planType="BASIC" price="$39" />
